@@ -1,9 +1,9 @@
 let a = Number(prompt('Введите код от 0 до 7, чтобы '));
-if (isNaN(a) && a > 7 || a < 0) {
-    console.log('Введите корректрное число');
+if ((isNaN(a)) && (a > 7 || a < 0)) {
+    console.log('Введите корректное значение');
 }
 switch (a) {
-
+    
     case 0: 
     console.log('0 - никаких прав');
     break;
@@ -32,8 +32,10 @@ switch (a) {
     console.log('6 - чтение и запись');
     break;
 
-    default: 
+    case 7: 
     console.log('7 - чтение запись и выполнение');
     break;
 
+    default:
+    console.log( 'Нет таких значений, введите код от 0 до 7' );
 }
