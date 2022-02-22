@@ -1,7 +1,8 @@
 let a = Number(prompt('Введите код от 0 до 7, чтобы '));
-if ((isNaN(a)) && (a > 7 || a < 0)) {
+if (isNaN(a)) {
     console.log('Введите корректное значение');
 }
+else {
 switch (a) {
     
     case 0: 
@@ -38,4 +39,5 @@ switch (a) {
 
     default:
     console.log( 'Нет таких значений, введите код от 0 до 7' );
+}
 }
